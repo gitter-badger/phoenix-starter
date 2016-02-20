@@ -10,7 +10,11 @@ defmodule PhoenixGuardian.Repo.Migrations.CreateGuardianDb do
       add :exp, :bigint
       add :jwt, :text
       add :claims, :map
+      add :typ, :string
+
       timestamps
     end
+
+    create index(:guardian_tokens, [:typ])
   end
 end
