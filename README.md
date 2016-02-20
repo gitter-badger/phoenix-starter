@@ -1,6 +1,6 @@
-# PhoenixGuardian
+# Phoenix Starter
 
-[![Build Status](https://travis-ci.org/hassox/phoenix_guardian.svg?branch=ueberauth-guardian)](https://travis-ci.org/hassox/phoenix_guardian)
+[![Build Status](https://travis-ci.org/iNeedThis/phoenix-starter.svg?branch=master)](https://travis-ci.org/iNeedThis/phoenix-starter)
 
 Provides an example implementation for authentication in Phoneix applications
 using Überauth and Guardian.
