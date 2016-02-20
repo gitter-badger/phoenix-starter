@@ -6,7 +6,7 @@ Phoenix Starter [![docs](http://inch-ci.org/github/iNeedThis/phoenix-starter.svg
 
 **Live Demo**: http://phoenixstarter.herokuapp.com
 
-A boilerplate for **Phoenix Framework** web applications.
+A boilerplate for **Phoenix Framework** web applications. Inspired by [Sahat's Hackathon Starter](https://github.com/sahat/hackathon-starter)
 
 If you have attended any hackathons in the past, then you know how much time it takes to
 get a project started: decide on what to build, pick a programming language, pick a web framework,
@@ -14,8 +14,8 @@ pick a CSS framework. A while later, you might have an initial project up on Git
 can other team members start contributing. Or how about doing something as simple as *Sign in with Facebook*
 authentication? You can spend hours on it if you are not familiar with how OAuth 2.0 works.
 
-When I started this project, my primary focus was on **simplicity** and **ease of use**.
-I also tried to make it as **generic** and **reusable** as possible to cover most use cases of hackathon web apps,
+My primary focus is on **simplicity** and **ease of use**. It will try to be as
+**generic** and **reusable** as possible to cover most use cases of hackathon web apps,
 without being too specific. In the worst case you can use this as a learning guide for your projects,
 if for example you are only interested in **Sign in with Google** authentication and nothing else.
 
@@ -57,33 +57,33 @@ Table of Contents
 Features
 --------
 
-- **Local Authentication** using Email and Password
-- **OAuth 1.0a Authentication** via Twitter
-- **OAuth 2.0 Authentication** via Facebook, Google, GitHub, LinkedIn, Instagram
-- Flash notifications
-- MVC Project Structure
-- Sass stylesheets (auto-compiled via Brunch)
-- Bootstrap 3
-- Contact Form (powered by Mailgun, Sendgrid or Mandrill)
-- **Account Management**
- - Gravatar
- - Profile Details
- - Change Password
- - Forgot Password
- - Reset Password
- - Link multiple OAuth strategies to one account
- - Delete Account
-- CSRF protection
+- [x] **Local Authentication** using Email and Password
+- [ ] **OAuth 1.0a Authentication** via Twitter
+- [x] **OAuth 2.0 Authentication** via Facebook, Google, GitHub, Slack
+- [x] Flash notifications
+- [x] MVC Project Structure
+- [x] Sass stylesheets (auto-compiled via Brunch)
+- [x] Bootstrap 3+
+- [ ] Contact Form (powered by Mailgun, Sendgrid or Mandrill)
+- [ ] **Account Management**
+ - [ ] Gravatar
+ - [ ] Profile Details
+ - [ ] Change Password
+ - [ ] Forgot Password
+ - [ ] Reset Password
+ - [ ] Link multiple OAuth strategies to one account
+ - [ ] Delete Account
+- [x] CSRF protection
 
 Prerequisites
 -------------
 
-- [Postgresql](https://www.mongodb.org/downloads)
-- [Erlang](http://nodejs.org)
-- [Elixir](http://nodejs.org)
-- [Phoenix](http://nodejs.org)
-- [Foreman](http://nodejs.org)
-- [Heroku Toolbelt](http://nodejs.org)
+- [Postgresql](http://www.postgresql.org/)
+- [Erlang](https://www.erlang.org/)
+- [Elixir](http://elixir-lang.org/)
+- [Phoenix](http://www.phoenixframework.org/)
+- [Foreman](http://ddollar.github.io/foreman/)
+- [Heroku Toolbelt](https://toolbelt.heroku.com/)
 - Command Line Tools
  - <img src="http://deluge-torrent.org/images/apple-logo.gif" height="17">&nbsp;**Mac OS X:** [Xcode](https://itunes.apple.com/us/app/xcode/id497799835?mt=12) (or **OS X 10.9+**: `xcode-select --install`)
  - <img src="http://dc942d419843af05523b-ff74ae13537a01be6cfec5927837dcfe.r14.cf1.rackcdn.com/wp-content/uploads/windows-8-50x50.jpg" height="17">&nbsp;**Windows:** [Visual Studio](https://www.visualstudio.com/products/visual-studio-community-vs)
@@ -192,82 +192,6 @@ The same goes for other providers.
 
 <hr>
 
-<img src="http://www.danpontefract.com/wp-content/uploads/2014/02/logo-linkedin.png" width="200">
-- Sign in at [LinkedIn Developer Network](https://developer.linkedin.com/)
-- From the account name dropdown menu select **API Keys**
- - *It may ask you to sign in once again*
-- Click **+ Add New Application** button
-- Fill out all the *required* fields
- - **OAuth 2.0 Redirect URLs**: http://localhost:3000/auth/linkedin/callback
- - **JavaScript API Domains**: http://localhost:3000
-- For **Default Application Permissions** make sure at least the following is checked:
- - `r_basicprofile`
-- Finish by clicking **Add Application** button
-- Copy and paste *API Key* and *Secret Key* keys into `.env` file
- - *API Key* is your **clientID**
- - *Secret Key* is your **clientSecret**
-
-<hr>
-
-<img src="https://s3.amazonaws.com/venmo/venmo_logo_blue.png" width="200">
-- Visit the **Account** section of your Venmo profile after logging in
-- Click on the **Developers** tab
-- Then click on the [new](https://venmo.com/account/app/new) link next to **Your Applications (0)**
-- Fill in the required fields: *App Name* and *What Will The App Be Used For?*
-- For **Web Redirect URL** enter: http://localhost:3000/auth/venmo/callback
-- Hit **Create** button
-- Back on the **Developers** tab click on **view** link next to **Your Applications (1) new**
-- Copy and paste **ID** and **Secret** keys into `.env` file
-
-<hr>
-
-<img src="https://stripe.com/img/about/logos/logos/black@2x.png" width="200">
-- [Sign up](https://stripe.com/) or log into your [dashboard](https://manage.stripe.com)
-- Click on your profile and click on Account Settings
-- Then click on [API Keys](https://manage.stripe.com/account/apikeys)
-- Copy the **Secret Key**. and add this into `.env` file
-<hr>
-
-<img src="https://yenniferallulli.com/wp-content/uploads/2015/01/Paypal-Logo-Transparent-png-format-large-size.png" width="200">
-- Visit [PayPal Developer](https://developer.paypal.com/)
-- Log in to your PayPal account
-- Click **Applications > Create App** in the navigation bar
-- Enter *Application Name*, then click **Create app**
-- Copy and paste *Client ID* and *Secret* keys into `.env` file
-- *App ID* is **client_id**, *App Secret* is **client_secret**
-- Change **host** to api.paypal.com if you want to test against production and use the live credentials
-
-<hr>
-
-<img src="http://33.media.tumblr.com/ffaf0075be879b3ab0b87f0b8bcc6814/tumblr_inline_n965bkOymr1qzxhga.png" width="200">
-- Go to [foursquare for Developers](https://developer.foursquare.com/)
-- Click on **My Apps** in the top menu
-- Click the **Create A New App** button
-- Enter *App Name*, *Welcome page url*,
-- For **Redirect URI**: http://localhost:3000/auth/foursquare/callback
-- Click **Save Changes**
-- Copy and paste *Client ID* and *Client Secret* keys into `.env` file
-
-<hr>
-
-<img src="http://img4.wikia.nocookie.net/__cb20130520163346/logopedia/images/8/8d/Tumblr_logo_by_x_1337_x-d5ikwpp.png" width="200">
-- Go to http://www.tumblr.com/oauth/apps
-- Once signed in, click **+Register application**
-- Fill in all the details
-- For **Default Callback URL**: http://localhost:3000/auth/tumblr/callback
-- Click **✔Register**
-- Copy and paste *OAuth consumer key* and *OAuth consumer secret* keys into `.env` file
-
-<hr>
-
-<img src="http://www.technologytell.com/gaming/files/2012/01/steam_logo.jpg" width="200">
-- Go to http://steamcommunity.com/dev/apikey
-- Sign in with your existing Steam account
-- Enter your *Domain Name*, then and click **Register**
-- Copy and paste *Key* into `.env` file
-
-<hr>
-
 <img src="http://iandouglas.com/presentations/pyconca2012/logos/sendgrid_logo.png" width="200">
 - Go to https://sendgrid.com/user/signup
 - Sign up and **confirm** your account via the *activation email*
@@ -287,22 +211,6 @@ The same goes for other providers.
 - Sign up and add your *Domain Name*
 - From the dashboard, click on *Get SMTP credentials*
 - Copy and paste the default SMTP *Login* and *Password* into `.env` file
-
-<hr>
-
-<img src="https://www.bitgo.com/img/new_bitgo/logo_footer.png" width="200">
-- Go to https://test.bitgo.com/
-- Sign up for an account.
-- Once logged into the dashboard, go to the top right selector and click 'account settings'
-- Under the developers tab, create your access token and copy and paste it into `.env` file
-
-<hr>
-
-<img src="https://s3.amazonaws.com/ahoy-assets.twilio.com/global/images/wordmark.svg" width="200">
-- Go to https://www.twilio.com/try-twilio
-- Sign up for an account.
-- Once logged into the dashboard, expand the link 'show api credentials'
-- Copy your Account Sid and Auth Token
 
 Project Structure
 -----------------
@@ -377,7 +285,11 @@ Recommended Design Resources
 
 Recommended Hex Libraries
 -----------------------------
-- Coming Soon!
+- [Poison](https://hex.pm/packages/poison) - An incredibly fast, pure Elixir JSON library
+- [Decimal](https://hex.pm/packages/decimal) - Arbitrary precision decimal arithmetic for Elixir.
+- [Ex Cloudinary](https://hex.pm/packages/ex_cloudinary) - Image uploads for Cloudinary.
+- [Arc](https://github.com/stavro/arc_ecto) - Flexible file upload and attachment library for Elixir.
+- [Awesome Elixir](https://github.com/h4cc/awesome-elixir) - A curated list of amazingly awesome Elixir and Erlang libraries, resources and shiny things.
 
 Recommended Client-side Libraries
 ---------------------------------
