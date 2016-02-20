@@ -11,4 +11,3 @@ defmodule PhoenixGuardian.Controller.Helpers do
   defp referrer([]), do: nil
   defp referrer([h|_]), do: h
 end
-

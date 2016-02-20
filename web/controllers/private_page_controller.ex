@@ -5,7 +5,9 @@ defmodule PhoenixGuardian.PrivatePageController do
   """
   use PhoenixGuardian.Web, :controller
 
-  plug Guardian.Plug.EnsureAuthenticated, handler: __MODULE__, typ: "token"
+  alias Guardian.Plug.{EnsureAuthenticated}
+
+  plug EnsureAuthenticated, handler: __MODULE__, typ: "token"
 
   def index(conn, _params, current_user, _claims) do
     render conn, "index.html", current_user: current_user

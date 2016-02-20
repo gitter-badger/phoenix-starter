@@ -2,8 +2,7 @@ defmodule PhoenixGuardian.TokenController do
   use PhoenixGuardian.Web, :controller
 
   alias PhoenixGuardian.GuardianToken
-  alias Guardian.Plug.EnsureAuthenticated
-  alias Guardian.Plug.EnsurePermissions
+  alias Guardian.Plug.{EnsureAuthenticated, EnsurePermissions}
 
   plug EnsureAuthenticated, handler: __MODULE__, typ: "token"
   plug EnsurePermissions, [handler: __MODULE__, default: ~w(read_token)] when action in [:index]

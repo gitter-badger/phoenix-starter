@@ -1,6 +1,5 @@
 defmodule PhoenixGuardian.UserFromAuth do
-  alias PhoenixGuardian.User
-  alias PhoenixGuardian.Authorization
+  alias PhoenixGuardian.{User, Authorization}
   alias Ueberauth.Auth
 
   def get_or_insert(auth, current_user, repo) do
