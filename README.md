@@ -19,7 +19,8 @@ I also tried to make it as **generic** and **reusable** as possible to cover mos
 without being too specific. In the worst case you can use this as a learning guide for your projects,
 if for example you are only interested in **Sign in with Google** authentication and nothing else.
 
-<h4 align="center">Modern Theme</h4>
+Pictures Coming Soon!
+<!-- <h4 align="center">Modern Theme</h4>
 
 ![](https://lh6.googleusercontent.com/-KQTmCFNK6MM/U7OZpznjDuI/AAAAAAAAERc/h3jR27Uy1lE/w1366-h1006-no/Screenshot+2014-07-02+01.32.22.png)
 
@@ -29,7 +30,7 @@ if for example you are only interested in **Sign in with Google** authentication
 
 <h4 align="center">API Examples</h4>
 
-![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png)
+![](https://lh5.googleusercontent.com/-BJD2wK8CvC8/VLodBsyL-NI/AAAAAAAAEx0/SafE6o_qq_I/w1818-h1186-no/Screenshot%2B2015-01-17%2B00.25.49.png) -->
 
 Table of Contents
 -----------------
@@ -61,9 +62,8 @@ Features
 - **OAuth 2.0 Authentication** via Facebook, Google, GitHub, LinkedIn, Instagram
 - Flash notifications
 - MVC Project Structure
-- Node.js clusters support
-- Sass stylesheets (auto-compiled via middleware)
-- Bootstrap 3 + Extra Themes
+- Sass stylesheets (auto-compiled via Brunch)
+- Bootstrap 3
 - Contact Form (powered by Mailgun, Sendgrid or Mandrill)
 - **Account Management**
  - Gravatar
@@ -74,7 +74,6 @@ Features
  - Link multiple OAuth strategies to one account
  - Delete Account
 - CSRF protection
-- **API Examples**: Facebook, Foursquare, Last.fm, Tumblr, Twitter, Stripe, LinkedIn and more.
 
 Prerequisites
 -------------
@@ -92,10 +91,9 @@ Prerequisites
  - <img src="http://i1-news.softpedia-static.com/images/extra/LINUX/small/slw218news1.png" height="17">&nbsp;**Fedora**: `sudo dnf groupinstall "Development Tools"`
  - <img src="https://en.opensuse.org/images/b/be/Logo-geeko_head.png" height="17">&nbsp;**OpenSUSE:** `sudo zypper install --type pattern devel_basis`
 
-**Note:** If you are new to Node or Express, I recommend to watch
-[Node.js and Express 101](https://www.youtube.com/watch?v=BN0JlMZCtNU)
-screencast by Alex Ford that teaches Node and Express from scratch. Alternatively,
-here is another great tutorial for complete beginners - [Getting Started With Node.js, Express, MongoDB](http://cwbuecheler.com/web/tutorials/2013/node-express-mongo/).
+**Note:** If you are new to Elixir or Phoenix, I recommend to watch
+[Elixir Conf 2014 - Rise of the Phoenix](https://www.youtube.com/watch?v=3jMbzGv_6tA)
+screencast by Confreaks, talk by Chris McCord that introduces Phoenix.
 
 Getting Started
 ---------------
@@ -127,9 +125,9 @@ to obtain appropriate credentials: Client ID, Client Secret, API Key, or
 Username & Password. You will need to go through each provider to generate new
 credentials.
 
-**Hackathon Starter 2.0 Update:** I have included dummy keys and passwords for
-all API examples to get you up and running even faster. But don't forget to update
-them with *your credentials* when you are ready to deploy an app.
+I have included dummy keys and passwords for all API examples to get you up and
+running. *But don't forget to update them with *your credentials* when you are
+ready to deploy an app.*
 
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Google_2015_logo.svg/1000px-Google_2015_logo.svg.png" width="200">
 - Visit [Google Cloud Console](https://cloud.google.com/console/project)
