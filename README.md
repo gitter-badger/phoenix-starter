@@ -1,6 +1,4 @@
-[![docs](http://inch-ci.org/github/iNeedThis/phoenix-starter.svg?branch=master)](http://inch-ci.org/github/iNeedThis/phoenix-starter)[![Deps Status](http://hexfaktor.org/images/deps.svg)](http://hexfaktor.org/)
-=======================
-![](https://www.dropbox.com/s/t8n0iotzxb0658y/banner.png?dl=0)
+![](https://github.com/iNeedThis/phoenix-starter/blob/master/banner.png)
 Phoenix Starter [![docs](http://inch-ci.org/github/iNeedThis/phoenix-starter.svg?branch=master)](http://inch-ci.org/github/iNeedThis/phoenix-starter)[![Deps Status](http://hexfaktor.org/images/deps.svg)](http://hexfaktor.org/)[![Build Status](https://travis-ci.org/iNeedThis/phoenix-starter.svg?branch=master)](https://travis-ci.org/iNeedThis/phoenix-starter)
 =======================
 
@@ -342,22 +340,7 @@ Project Structure
 
 List of Packages
 ----------------
-{:ex_machina, "~>0.6", only: [:dev, :test]},
-{:phoenix, "~> 1.1.4"},
-{:phoenix_ecto, "~> 2.0"},
-{:postgrex, ">= 0.0.0", override: true},
-{:phoenix_html, "~> 2.5"},
-{:phoenix_live_reload, "~> 1.0", only: :dev},
-{:guardian_db, "0.4.0"},
-{:guardian, "0.9.0"},
-{:ueberauth, git: "https://github.com/ueberauth/ueberauth.git", override: true},
-{:ueberauth_github, "~>0.2.0"},
-{:ueberauth_identity, "~>0.2.1"},
-{:ueberauth_slack, "~>0.2.0"},
-{:ueberauth_google, "~> 0.2"},
-{:ueberauth_facebook, "~> 0.3.2"},
-{:comeonin, "~> 1.6"},
-{:cowboy, "~> 1.0"}
+
 | Package                         | Description                                                           |
 | ------------------------------- | --------------------------------------------------------------------- |
 | phoenix                         | Coming Soon                                                           |
@@ -368,7 +351,14 @@ List of Packages
 |                                                                                                         |
 | guardian                        | Coming Soon                                                           |
 | guardian_db                     | Coming Soon                                                           |
-
+| ueberauth                       | Coming Soon                                                           |
+| ueberauth_github                | Coming Soon                                                           |
+| ueberauth_identity              | Coming Soon                                                           |
+| ueberauth_slack                 | Coming Soon                                                           |
+| ueberauth_google                | Coming Soon                                                           |
+| ueberauth_facebook              | Coming Soon                                                           |
+| comeonin                        | Coming Soon                                                           |
+| cowboy                          | Coming Soon                                                           |
 
 Useful Tools and Resources
 --------------------------
