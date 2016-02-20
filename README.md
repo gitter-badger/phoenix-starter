@@ -334,20 +334,21 @@ List of Packages
 
 | Package                         | Description                                                           |
 | ------------------------------- | --------------------------------------------------------------------- |
-| phoenix                         | Coming Soon                                                           |
-| phoenix_ecto                    | Coming Soon                                                           |
-| phoenix_html                    | Coming Soon                                                           |
-| phoenix_live_reload             | Coming Soon                                                           |
-| cowboy                          | Coming Soon                                                           |
-| guardian                        | Coming Soon                                                           |
-| guardian_db                     | Coming Soon                                                           |
-| ueberauth                       | Coming Soon                                                           |
-| ueberauth_github                | Coming Soon                                                           |
-| ueberauth_identity              | Coming Soon                                                           |
-| ueberauth_slack                 | Coming Soon                                                           |
-| ueberauth_google                | Coming Soon                                                           |
-| ueberauth_facebook              | Coming Soon                                                           |
-| comeonin                        | Coming Soon                                                           |
+| phoenix                         | Productive. Reliable. Fast. A productive web framework.               |
+| phoenix_ecto                    | Integration between Phoenix & Ecto.                                   |
+| phoenix_html                    | Phoenix.HTML functions for working with HTML strings and templates.   |
+| phoenix_live_reload             | Provides live-reload functionality for Phoenix.                       |
+| cowboy                          | Small, fast, modular HTTP server written in Erlang.                   |
+| guardian                        | Elixir Authentication framework.                                      |
+| guardian_db                     | DB tracking for token validity.                                       |
+| ueberauth                       | An Elixir Authentication System for Plug-based Web Applications.      |
+| ueberauth_identity              | An Ueberauth strategy for basic username/password.                    |
+| ueberauth_github                | An Ueberauth strategy for Github authentication.                      |
+| ueberauth_slack                 | An Ueberauth strategy for Slack authentication.                       |
+| ueberauth_google                | An Ueberauth strategy for Google authentication.                      |
+| ueberauth_facebook              | An Ueberauth strategy for Facebook authentication.                    |
+| ueberauth_twitter               | An Ueberauth strategy for Twitter authentication.                     |
+| comeonin                        | Password hashing (bcrypt, pbkdf2_sha512) library for Elixir.          |
 
 Useful Tools and Resources
 --------------------------
