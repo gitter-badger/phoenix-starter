@@ -1,25 +1,25 @@
-PROD_HOST="example.com"
-STAG_HOST="example.com"
+export PROD_HOST="example.com"
+export STAG_HOST="example.com"
 
 export GITHUB_CLIENT_ID=""
 export GITHUB_CLIENT_SECRET=""
 
-SLACK_CLIENT_ID=""
-SLACK_CLIENT_SECRET=""
+export SLACK_CLIENT_ID=""
+export SLACK_CLIENT_SECRET=""
 
-GOOGLE_CLIENT_ID=""
-GOOGLE_CLIENT_SECRET=""
+export GOOGLE_CLIENT_ID=""
+export GOOGLE_CLIENT_SECRET=""
 
-FACEBOOK_CLIENT_ID=""
-FACEBOOK_CLIENT_SECRET=""
+export FACEBOOK_CLIENT_ID=""
+export FACEBOOK_CLIENT_SECRET=""
 
-DEV_DB_USERNAME="postgres"
-DEV_DB_PASSWORD="postgres"
-DEV_DB_NAME="phoenix_starter_dev"
+export DEV_DB_USERNAME="postgres"
+export DEV_DB_PASSWORD="postgres"
+export DEV_DB_NAME="phoenix_starter_dev"
 
-PROD_DB_URL=""
-STAG_DB_URL=""
+export PROD_DB_URL=""
+export STAG_DB_URL=""
 
-TEST_DB_USERNAME="postgres"
-TEST_DB_PASSWORD="postgres"
-TEST_DB_NAME="phoenix_starter_test"
+export TEST_DB_USERNAME="postgres"
+export TEST_DB_PASSWORD="postgres"
+export TEST_DB_NAME="phoenix_starter_test"
