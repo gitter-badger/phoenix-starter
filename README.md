@@ -5,7 +5,7 @@
 Provides an example implementation for authentication in Phoneix applications
 using Überauth and Guardian.
 
-The main user model is `User` which has many `Authorization`s. This is done so
+The main user model is `User` which has many `Authorization's`. This is done so
 that for any given user they can have authorizations from different sources.
 Github, Slack, Google, Facebook, Email/Password etc.
 
