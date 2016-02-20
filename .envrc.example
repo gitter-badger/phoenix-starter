@@ -1,5 +1,3 @@
-MIX_ENV="dev"
-
 PROD_HOST="example.com"
 STAG_HOST="example.com"
 
@@ -17,11 +15,11 @@ FACEBOOK_CLIENT_SECRET=""
 
 DEV_DB_USERNAME="postgres"
 DEV_DB_PASSWORD="postgres"
-DEV_DB_NAME="phoenix-starter-dev"
+DEV_DB_NAME="phoenix_starter_dev"
 
 PROD_DB_URL=""
 STAG_DB_URL=""
 
 TEST_DB_USERNAME="postgres"
 TEST_DB_PASSWORD="postgres"
-TEST_DB_NAME="phoenix-starter-test"
+TEST_DB_NAME="phoenix_starter_test"
