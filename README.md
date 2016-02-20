@@ -7,7 +7,7 @@ using Überauth and Guardian.
 
 The main user model is `User` which has many `Authorization`s. This is done so
 that for any given user they can have authorizations from different sources.
-Github, Slack, Email/Password etc.
+Github, Slack, Google, Facebook, Email/Password etc.
 
 Once we have the user in the system - Guardian steps in to provide request
 implementation.
@@ -20,11 +20,9 @@ To start your Phoenix app:
   1. Install dependencies with `mix deps.get && npm install`
   2. Create and migrate your database with `mix ecto.create && mix ecto.migrate`
   3. Start Phoenix endpoint with `mix phoenix.server`
-  4. Export secrets for your Github and Slack application in your environment
-    * ```GITHUB_CLIENT_ID```
-    * ```GITHUB_CLIENT_SECRET```
-    * ```SLACK_CLIENT_ID```
-    * ```SLACK_CLIENT_SECRET```
+  4. Duplicate the supplied .envrc.example file to an .envrc file and update the environment variables.
+  5. (IMPORTANT) Before starting the project or running tests, make sure to run command `source .envrc` to load necessary ENV vars.
+  5. Run the site with `foreman s -f Procfile.dev`
 
 Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
 
@@ -42,7 +40,7 @@ The site is broken into two broad parts
 
 ## License
 
-Copyright (c) 2015 Daniel Neighman
+Copyright (c) 2016 Michael Cloutier
 
 Permission is hereby granted, free of charge, to any person obtaining
 a copy of this software and associated documentation files (the
